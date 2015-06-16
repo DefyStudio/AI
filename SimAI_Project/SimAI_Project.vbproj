@@ -113,6 +113,15 @@
     <Compile Include="_Analysis\Analysis.vb" />
     <Compile Include="_Learning\Wiki.vb" />
     <Compile Include="_Tools\Tools.vb" />
+    <Compile Include="_Tools\分析_詞性.vb" />
+    <Compile Include="_Tools\分析_語氣.vb" />
+    <Compile Include="_Tools\分析_類型.vb" />
+    <Compile Include="_Tools\回應_GET.vb" />
+    <Compile Include="_Tools\物件置中.vb" />
+    <Compile Include="_Tools\特效_處理中.vb" />
+    <Compile Include="_Tools\複製Listbox.vb" />
+    <Compile Include="_Tools\跨執行緒存取寫入.vb" />
+    <Compile Include="_Type\Type.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="UI.resx">

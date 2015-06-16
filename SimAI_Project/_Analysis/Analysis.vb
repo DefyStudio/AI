@@ -1,5 +1,5 @@
 ﻿Public Class Analysis
-    Dim Wiki As New Wiki, Wiki_語言 As New Wiki.語言, Tools As New Tools, Tools_類型 As New Tools.類型
+    Dim Wiki As New Wiki, Wiki_語言 As New Type.語言, Tools As New Tools, Tools_類型 As New Type.類型
     Public Debug_ As New ListBox
     Public Function 處理_問題(ByVal 問題 As String) As String
         Debug_.Items.Clear()
