@@ -30,6 +30,7 @@ Partial Class UI
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.處理_結果 = New System.ComponentModel.BackgroundWorker()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -38,6 +39,7 @@ Partial Class UI
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.ListBox1)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.TextBox1)
@@ -45,7 +47,7 @@ Partial Class UI
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1141, 506)
+        Me.Panel1.Size = New System.Drawing.Size(1141, 732)
         Me.Panel1.TabIndex = 0
         '
         'ListBox1
@@ -53,9 +55,9 @@ Partial Class UI
         Me.ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 12
-        Me.ListBox1.Location = New System.Drawing.Point(25, 29)
+        Me.ListBox1.Location = New System.Drawing.Point(25, 429)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(240, 422)
+        Me.ListBox1.Size = New System.Drawing.Size(1103, 290)
         Me.ListBox1.TabIndex = 1
         '
         'Button1
@@ -109,12 +111,27 @@ Partial Class UI
         '處理_結果
         '
         '
+        'Button2
+        '
+        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(874, 371)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(82, 40)
+        Me.Button2.TabIndex = 5
+        Me.Button2.TabStop = False
+        Me.Button2.Text = "Google"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'UI
         '
         Me.AcceptButton = Me.Button1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1141, 506)
+        Me.ClientSize = New System.Drawing.Size(1141, 732)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
@@ -136,5 +153,6 @@ Partial Class UI
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents 處理_結果 As System.ComponentModel.BackgroundWorker
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 
 End Class

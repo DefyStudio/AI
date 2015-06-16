@@ -40,4 +40,10 @@
     Private Sub 處理_結果_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles 處理_結果.DoWork
         處理結果 = Analysis.處理_問題(TextBox1.Text)
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim Handler As New Google.Translate
+        'Handler.DebugTest()
+        MsgBox(Handler.翻譯(TextBox1.Text, "zh-TW"))
+    End Sub
 End Class

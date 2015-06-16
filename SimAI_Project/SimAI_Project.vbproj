@@ -111,6 +111,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="_Analysis\Analysis.vb" />
+    <Compile Include="_Learning\Google.vb" />
     <Compile Include="_Learning\Wiki.vb" />
     <Compile Include="_Tools\Tools.vb" />
     <Compile Include="_Tools\分析_詞性.vb" />
