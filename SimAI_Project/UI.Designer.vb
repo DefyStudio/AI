@@ -24,13 +24,12 @@ Partial Class UI
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UI))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.特效_處理中 = New System.ComponentModel.BackgroundWorker()
         Me.處理_結果 = New System.ComponentModel.BackgroundWorker()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -48,6 +47,16 @@ Partial Class UI
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1141, 506)
         Me.Panel1.TabIndex = 0
+        '
+        'ListBox1
+        '
+        Me.ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 12
+        Me.ListBox1.Location = New System.Drawing.Point(25, 29)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(240, 422)
+        Me.ListBox1.TabIndex = 1
         '
         'Button1
         '
@@ -97,15 +106,8 @@ Partial Class UI
         Me.Label1.Size = New System.Drawing.Size(0, 79)
         Me.Label1.TabIndex = 0
         '
-        'ListBox1
+        '處理_結果
         '
-        Me.ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 12
-        Me.ListBox1.Location = New System.Drawing.Point(25, 113)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(240, 338)
-        Me.ListBox1.TabIndex = 1
         '
         'UI
         '
@@ -132,7 +134,6 @@ Partial Class UI
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents 特效_處理中 As System.ComponentModel.BackgroundWorker
     Friend WithEvents 處理_結果 As System.ComponentModel.BackgroundWorker
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
 

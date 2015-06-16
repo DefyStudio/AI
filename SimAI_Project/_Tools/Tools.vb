@@ -8,7 +8,11 @@
         If UI.InvokeRequired Then
             UI.Invoke(New 跨執行緒存取寫入_(AddressOf 跨執行緒存取寫入), 文字, 物件)
         Else
-            物件.Text = 文字
+            If TypeOf 物件 Is ListBox Then
+                CType(物件, ListBox).Items.Add(文字)
+            ElseIf TypeOf 物件 Is Label Or TypeOf 物件 Is TextBox Then
+                物件.Text = 文字
+            End If
         End If
     End Sub
     Public Sub 物件置中(ByVal 母 As Control, ByVal 子 As Control)
@@ -38,6 +42,29 @@
         If "的是".Contains(字) Then Return "助詞"
         Return ""
     End Function
+    Public Function 分析_語氣(字 As Char) As String
+        If "!！".Contains(字) Then Return "感嘆"
+        If "?？".Contains(字) Then Return "疑問"
+        If ",， ".Contains(字) Then Return "停頓"
+        If "：：".Contains(字) Then Return "例子"
+        If ".．‧".Contains(字) Then Return "完結"
+        Return ""
+    End Function
+    Public Function 特效_處理中() As String
+        Dim LoadingDot As Integer = Now.Second, DotResult As String = ""
+        If LoadingDot > 10 Then LoadingDot = LoadingDot.ToString.Substring(1)
+        While LoadingDot > 0
+            DotResult += "."
+            LoadingDot -= 1
+        End While
+        Return DotResult
+    End Function
+    Public Sub 複製Listbox(ORGIN As ListBox, NEWS As ListBox)
+        Dim objCollection As Object() = New Object(ORGIN.Items.Count - 1) {}
+        ORGIN.Items.CopyTo(objCollection, 0)
+        NEWS.Items.Clear()
+        NEWS.Items.AddRange(objCollection)
+    End Sub
     Public Class 類型
         Public Function 數字() As String
             Return "數字"
