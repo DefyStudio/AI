@@ -31,6 +31,7 @@ Partial Class UI
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.處理_結果 = New System.ComponentModel.BackgroundWorker()
+        Me.處理_結果_Debug = New System.ComponentModel.BackgroundWorker()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -57,12 +58,12 @@ Partial Class UI
         Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(815, 372)
+        Me.Button2.Location = New System.Drawing.Point(808, 372)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(82, 40)
         Me.Button2.TabIndex = 5
         Me.Button2.TabStop = False
-        Me.Button2.Text = "Debug"
+        Me.Button2.Text = "除錯"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'ListBox1
@@ -126,6 +127,9 @@ Partial Class UI
         '處理_結果
         '
         '
+        '處理_結果_Debug
+        '
+        '
         'UI
         '
         Me.AcceptButton = Me.Button1
@@ -154,5 +158,6 @@ Partial Class UI
     Friend WithEvents 處理_結果 As System.ComponentModel.BackgroundWorker
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents 處理_結果_Debug As System.ComponentModel.BackgroundWorker
 
 End Class
