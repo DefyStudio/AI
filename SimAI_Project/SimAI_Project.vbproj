@@ -121,6 +121,7 @@
     <Compile Include="_Tools\分析_語氣.vb" />
     <Compile Include="_Tools\分析_類型.vb" />
     <Compile Include="_Tools\回應_GET.vb" />
+    <Compile Include="_Tools\格式_半形.vb" />
     <Compile Include="_Tools\物件置中.vb" />
     <Compile Include="_Tools\特效_處理中.vb" />
     <Compile Include="_Tools\複製Listbox.vb" />
