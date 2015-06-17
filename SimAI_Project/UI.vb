@@ -1,5 +1,5 @@
 ﻿Public Class UI
-    Dim Tools As New Tools, Analysis As New Analysis, 處理結果 As String = ""
+    Dim Tools As New Tools, Analysis As New Analysis, AnalysisDebug As New AnalysisDebug, 處理結果 As String = "", ProcessClass
     Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
         Tools.物件置中(Panel2, Label1)
     End Sub
@@ -42,8 +42,9 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim Handler As New Google.Translate
-        'Handler.DebugTest()
-        MsgBox(Handler.翻譯(TextBox1.Text, "zh-TW"))
+        Dim Handler As New Wikia
+        MsgBox(Handler.查詢("hea", "evchk"))
+        'Label1.Text = AnalysisDebug.處理_問題(TextBox1.Text)
+        ' Tools.複製Listbox(AnalysisDebug.Debug_, ListBox1)
     End Sub
 End Class

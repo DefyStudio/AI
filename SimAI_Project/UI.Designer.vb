@@ -24,13 +24,13 @@ Partial Class UI
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UI))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.處理_結果 = New System.ComponentModel.BackgroundWorker()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -49,6 +49,21 @@ Partial Class UI
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1141, 732)
         Me.Panel1.TabIndex = 0
+        '
+        'Button2
+        '
+        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(815, 372)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(82, 40)
+        Me.Button2.TabIndex = 5
+        Me.Button2.TabStop = False
+        Me.Button2.Text = "Debug"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'ListBox1
         '
@@ -110,21 +125,6 @@ Partial Class UI
         '
         '處理_結果
         '
-        '
-        'Button2
-        '
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(874, 371)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(82, 40)
-        Me.Button2.TabIndex = 5
-        Me.Button2.TabStop = False
-        Me.Button2.Text = "Google"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'UI
         '
