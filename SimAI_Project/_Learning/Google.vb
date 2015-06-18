@@ -6,7 +6,6 @@
             Try
                 'MsgBox("https://translate.google.com.hk/translate_a/single?client=t&sl=auto&tl=" + 目標語言 + "&dt=t&q=" + System.Web.HttpUtility.UrlEncode(文字, System.Text.Encoding.ASCII))
                 Dim Result = Tools.回應_GET("https://translate.googleapis.com/translate_a/single?client=t&sl=" + 原本語言 + "&tl=" + 目標語言 + "&dt=t&q=" + System.Web.HttpUtility.UrlEncode(文字, System.Text.Encoding.ASCII))
-                MsgBox(Result)
                 Result = Result.Substring(4, Result.Length - 4).Split(ControlChars.Quote).First
                 Return Tools.格式_半形(Result)
             Catch ex As Exception

@@ -113,6 +113,7 @@
     </Compile>
     <Compile Include="_Analysis\Analysis.vb" />
     <Compile Include="_Analysis\AnalysisDebug.vb" />
+    <Compile Include="_Analysis\Analysis_句子結構.vb" />
     <Compile Include="_Learning\Google.vb" />
     <Compile Include="_Learning\Wiki.vb" />
     <Compile Include="_Learning\Wikia.vb" />
